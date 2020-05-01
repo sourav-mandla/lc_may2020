@@ -35,11 +35,11 @@ class Solution {
                 if(mid <=current){
                     current = mid;
                 }
-                //cout<<"low ="<<low<<" high = "<<high<<endl;
                 high = mid-1;
 
             }else {
               low = mid+1;
+
             }
             binarySearch(low,high);
         }
@@ -50,7 +50,6 @@ class Solution {
 
 int main()
 {
-    p.print();
     Solution s;
     cout<<" firstbadversion "<<s.firstBadVersion(2126753390)<<endl;
     cout<< "Number of iteration = "<<s.counter<<endl;
